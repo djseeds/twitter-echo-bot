@@ -1,0 +1,15 @@
+{
+  "name": "twitter-echo-bot",
+  "version": "1.0.0",
+  "description": "Echos tweets from a given Twitter account",
+  "main": "main.js",
+  "scripts": {
+    "twitter-echo-bot": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.11",
+    "twitter": "^1.7.1"
+  }
+}
