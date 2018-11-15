@@ -16,7 +16,11 @@ var stream = T.stream('statuses/filter', { follow: [process.env.TWITTER_ACCOUNT_
 stream.on('tweet', function (tweet) {
     // Stream also returns retweets from other people, so we want to ignore those.
     if(tweet.user.id_str == process.env.TWITTER_ACCOUNT_TO_ECHO){
-        if(tweet.retweeted_status){
+        if(tweet.in_reply_to_status_id){
+            // Ignore replies
+            return
+        }
+        else if(tweet.retweeted_status){
             retweet(tweet.retweeted_status);
         }
         else{
