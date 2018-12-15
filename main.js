@@ -55,10 +55,7 @@ function process_new_tweets() {
         sorted_tweets.forEach(function(tweet) {
             var tweet_time = new Date(tweet.created_at)
             if(tweet_time > last_tweet_time) {
-                console.log(tweet)
-                console.log(tweet_time)
-                console.log(last_tweet_time)
-                //process_tweet(tweet)
+                process_tweet(tweet)
             }
         })
         last_tweet_time = new Date()
