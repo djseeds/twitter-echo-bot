@@ -9,8 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "twit": "^2.2.11",
-    "twitter": "^1.7.1"
+    "twit": "^2.2.11"
   },
   "devDependencies": {
     "eslint": "^5.12.0",
