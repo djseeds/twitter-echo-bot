@@ -1,18 +1,33 @@
 {
   "name": "twitter-echo-bot",
-  "version": "1.0.0",
-  "description": "Echos tweets from a given Twitter account",
+  "version": "0.1.0",
+  "description": "Twitter bot that echos tweets from a given Twitter account",
   "main": "main.js",
   "scripts": {
     "twitter-echo-bot": "node main.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "DJ Seeds dseeds14@gmail.com",
+  "license": "MIT",
   "dependencies": {
+    "request": "^2.88.0",
     "twit": "^2.2.11"
   },
   "devDependencies": {
     "eslint": "^5.12.0",
     "eslint-config-google": "^0.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djseeds/twitter-echo-bot.git"
+  },
+  "keywords": [
+    "twitter",
+    "twitter-bot",
+    "twitter-streaming-api",
+    "twit",
+    "nodejs"
+  ],
+  "engines": {
+    "node": ">=7.8.0"
   }
 }
