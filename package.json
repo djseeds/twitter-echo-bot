@@ -1,11 +1,9 @@
 {
   "name": "twitter-echo-bot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Twitter bot that echos tweets from a given Twitter account",
-  "main": "main.js",
-  "scripts": {
-    "twitter-echo-bot": "node main.js"
-  },
+  "main": "lib/TwitterEchoBot.js",
+  "bin": "main.js",
   "author": "DJ Seeds dseeds14@gmail.com",
   "license": "MIT",
   "dependencies": {

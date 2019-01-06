@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const Twit = require('twit');
 const TwitterEchoBot = require('./lib/TwitterEchoBot.js');
 
