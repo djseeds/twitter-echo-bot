@@ -12,17 +12,8 @@ Blocked by an account but would still like to follow that account's tweets? This
 4. Generate Access Token in the `Keys and tokens` section of your app configuration.
 
 ## Installation
-1. Clone this repository
 ```
-git clone https://github.com/djseeds/twitter-echo-bot
-```
-```
-cd twitter-echo-bot
-```
-
-2. Install dependencies
-```
-npm install
+npm install --global twitter-echo-bot
 ```
 
 ## Configuration
@@ -60,5 +51,5 @@ export TWITTER_READER_ACCESS_TOKEN_SECRET='Access token secret here'
 ## Running
 To run the bot, simply run the following command:
 ```
-npm run twitter_echo_bot
+twitter_echo_bot
 ```
