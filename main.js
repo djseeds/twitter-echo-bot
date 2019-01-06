@@ -31,4 +31,4 @@ const echoBot = new TwitterEchoBot(twitterWriter, twitterReader);
 
 setInterval(function() {
   echoBot.processNewTweets();
-}, 10*1000);
+}, 60*1000);
