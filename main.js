@@ -27,7 +27,8 @@ const twitterWriter = new Twit({
   strictSSL: true, // optional - requires SSL certificates to be valid.
 });
 
-const echoBot = new TwitterEchoBot(twitterWriter, twitterReader);
+const echoBot = new TwitterEchoBot(process.env.TWITTER_ACCOUNT_TO_ECHO,
+    twitterWriter, twitterReader);
 
 setInterval(function() {
   echoBot.processNewTweets();
