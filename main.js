@@ -34,4 +34,4 @@ const echoBot = new TwitterEchoBot(process.env.TWITTER_ACCOUNT_TO_ECHO,
 
 setInterval(function() {
   echoBot.processNewTweets();
-}, 60*1000);
+}, process.env.TWITTER_WAIT_MS || 60*1000);
