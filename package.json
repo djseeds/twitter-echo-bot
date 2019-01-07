@@ -1,6 +1,6 @@
 {
   "name": "twitter-echo-bot",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Twitter bot that echos tweets from a given Twitter account",
   "main": "lib/TwitterEchoBot.js",
   "bin": "main.js",
