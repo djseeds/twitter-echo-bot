@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const Twit = require('twit');
+const Twit = require('twit';
 const TwitterEchoBot = require('./lib/TwitterEchoBot.js');
 
 // Twiter API object for reads.
