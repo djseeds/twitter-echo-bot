@@ -21,9 +21,12 @@ steps:
   displayName: 'ESLint'
 - script: npm run check
   displayName: 'Check for syntax errors'
+- script: git clean -fxd
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+  displayName: 'Clean up source directory'
 - task: CopyFiles@2
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
-  displayName: 'Copy artifacts to staging directory.'
+  displayName: 'Copy artifacts to staging directory'
   inputs:
     contents: '**/*'
     targetFolder: $(Build.ArtifactStagingDirectory)
