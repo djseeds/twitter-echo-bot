@@ -21,3 +21,11 @@ steps:
   displayName: 'ESLint'
 - script: npm run check
   displayName: 'Check for syntax errors'
+- task: CopyFiles@2
+  displayName: 'Copy artifacts to staging directory.'
+  inputs:
+    contents: '**/*'
+    targetFolder: $(Build.ArtifactStagingDirectory)
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: $(Build.ArtifactStagingDirectory)
